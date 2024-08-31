@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Aspirante - Líderes del Mañana</title>
+    <link rel="stylesheet" href="form_asp.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de Aspirante</h1>
+    </header>
+
+    <main>
+        <form id="aspiranteForm">
+            <section>
+                <h2>Datos del Colegio Actual</h2>
+                <label for="colegioNombre">Nombre del Colegio:</label>
+                <input type="text" id="colegioNombre" name="colegioNombre" required>
+                <label for="colegioTelefono">Teléfono:</label>
+                <input type="tel" id="colegioTelefono" name="colegioTelefono" required>
+                <label for="colegioDireccion">Dirección:</label>
+                <input type="text" id="colegioDireccion" name="colegioDireccion" required>
+                <label for="colegioEmail">E-mail:</label>
+                <input type="email" id="colegioEmail" name="colegioEmail" required>
+                <label for="colegioRector">Nombre del Rector:</label>
+                <input type="text" id="colegioRector" name="colegioRector" required>
+                <label for="colegioTitular">Nombre del Titular de Curso:</label>
+                <input type="text" id="colegioTitular" name="colegioTitular" required>
+            </section>
+
+            <section>
+                <h2>Datos del Estudiante</h2>
+                <label for="estudianteNombre">Nombres y Apellidos:</label>
+                <input type="text" id="estudianteNombre" name="estudianteNombre" required>
+                <label for="estudianteTI">T.I. / NUIP:</label>
+                <input type="text" id="estudianteTI" name="estudianteTI" required>
+                <label for="estudianteRH">RH:</label>
+                <input type="text" id="estudianteRH" name="estudianteRH" required>
+                <label for="estudianteLugarNacimiento">Lugar y fecha de nacimiento:</label>
+                <input type="text" id="estudianteLugarNacimiento" name="estudianteLugarNacimiento" required>
+                <label for="estudianteTelefono">Teléfonos:</label>
+                <input type="tel" id="estudianteTelefono" name="estudianteTelefono" required>
+                <label for="estudianteDireccion">Dirección Residencia:</label>
+                <input type="text" id="estudianteDireccion" name="estudianteDireccion" required>
+                <label for="estudianteGradoActual">Grado actual:</label>
+                <input type="text" id="estudianteGradoActual" name="estudianteGradoActual" required>
+                <label for="estudianteAntiguedad">Antigüedad en la institución:</label>
+                <input type="text" id="estudianteAntiguedad" name="estudianteAntiguedad" required>
+                <label for="estudianteGradoAspira">Grado al que aspira:</label>
+                <input type="text" id="estudianteGradoAspira" name="estudianteGradoAspira" required>
+                <label for="estudianteMotivo">Motivo por el cual desea continuar en la institución:</label>
+                <textarea id="estudianteMotivo" name="estudianteMotivo" required></textarea>
+                <label for="estudianteCursosRepetidos">Cursos repetidos:</label>
+                <input type="text" id="estudianteCursosRepetidos" name="estudianteCursosRepetidos" required>
+                <label for="estudianteFortalezas">Fortalezas:</label>
+                <textarea id="estudianteFortalezas" name="estudianteFortalezas" required></textarea>
+                <label for="estudianteDificultades">Dificultades:</label>
+                <textarea id="estudianteDificultades" name="estudianteDificultades" required></textarea>
+                <label for="estudianteViveCon">El estudiante vive con:</label>
+                <select id="estudianteViveCon" name="estudianteViveCon" required>
+                    <option value="Padres">Padres</option>
+                    <option value="Papa">Papá</option>
+                    <option value="Mama">Mamá</option>
+                    <option value="Abuelos">Abuelos</option>
+                    <option value="Tios">Tíos</option>
+                    <option value="Otros">Otros</option>
+                </select>
+            </section>
+
+            <section>
+                <h2>Datos Familiares</h2>
+                <label for="padreNombre">Nombres y Apellidos del Padre:</label>
+                <input type="text" id="padreNombre" name="padreNombre" required>
+                <label for="padreCC">C.C. N.:</label>
+                <input type="text" id="padreCC" name="padreCC" required>
+                <label for="padreDireccion">Dirección de residencia:</label>
+                <input type="text" id="padreDireccion" name="padreDireccion" required>
+                <label for="padreTelefonoFijo">Tel. Fijo:</label>
+                <input type="tel" id="padreTelefonoFijo" name="padreTelefonoFijo" required>
+                <label for="padreCelular">Celular:</label>
+                <input type="tel" id="padreCelular" name="padreCelular" required>
+                <label for="padreEmail">E-Mail:</label>
+                <input type="email" id="padreEmail" name="padreEmail" required>
+                <label for="padreProfesion">Profesión:</label>
+                <input type="text" id="padreProfesion" name="padreProfesion" required>
+                <label for="padreEmpleado">Empleado?</label>
+                <input type="checkbox" id="padreEmpleado" name="padreEmpleado">
+                <label for="padreDesempleado">Desempleado?</label>
+                <input type="checkbox" id="padreDesempleado" name="padreDesempleado">
+                <label for="padreIndependiente">Independiente?</label>
+                <input type="checkbox" id="padreIndependiente" name="padreIndependiente">
+                <label for="padreCargoActual">Cargo actual:</label>
+                <input type="text" id="padreCargoActual" name="padreCargoActual" required>
+                <label for="padreEmpresa">Empresa donde labora:</label>
+                <input type="text" id="padreEmpresa" name="padreEmpresa" required>
+                <label for="padreDireccionEmpresa">Dirección de la empresa:</label>
+                <input type="text" id="padreDireccionEmpresa" name="padreDireccionEmpresa" required>
+                <label for="padreBarrio">Barrio:</label>
+                <input type="text" id="padreBarrio" name="padreBarrio" required>
+                <label for="padreTelefonoEmpresa">Teléfono de la empresa:</label>
+                <input type="tel" id="padreTelefonoEmpresa" name="padreTelefonoEmpresa" required>
+                <label for="padreJefe">Jefe inmediato:</label>
+                <input type="text" id="padreJefe" name="padreJefe" required>
+                
+                <!-- Repeat similar sections for Madre and Acudiente -->
+                
+                <h3>Referencias</h3>
+                <label for="referencia1Nombre">Nombre y Apellido:</label>
+                <input type="text" id="referencia1Nombre" name="referencia1Nombre" required>
+                <label for="referencia1Parentesco">Parentesco:</label>
+                <input type="text" id="referencia1Parentesco" name="referencia1Parentesco" required>
+                <label for="referencia1TelefonoFijo">Tel. Fijo:</label>
+                <input type="tel" id="referencia1TelefonoFijo" name="referencia1TelefonoFijo" required>
+                <label for="referencia1Celular">Celular:</label>
+                <input type="tel" id="referencia1Celular" name="referencia1Celular" required>
+                
+                <label for="referencia2Nombre">Nombre y Apellido:</label>
+                <input type="text" id="referencia2Nombre" name="referencia2Nombre" required>
+                <label for="referencia2Parentesco">Parentesco:</label>
+                <input type="text" id="referencia2Parentesco" name="referencia2Parentesco" required>
+                <label for="referencia2TelefonoFijo">Tel. Fijo:</label>
+                <input type="tel" id="referencia2TelefonoFijo" name="referencia2TelefonoFijo" required>
+                <label for="referencia2Celular">Celular:</label>
+                <input type="tel" id="referencia2Celular" name="referencia2Celular" required>
+            </section>
+
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Líderes del Mañana. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="form_asp.js"></script>
+</body>
+</html>

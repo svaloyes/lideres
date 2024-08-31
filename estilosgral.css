@@ -1,0 +1,422 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #ffffff; /* Cambia a un azul que complemente el escudo */
+    padding: 10px 0;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    border-bottom: 2px solid #a5a4a4; /* Línea gris al final del header */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #002366; /* Azul oscuro para el texto */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px 15px; /* Asegura un poco de espacio dentro del borde */
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+nav ul li a:hover {
+    color: #099746; /* Cambia a un color complementario al azul */
+    /*border: 2px solid #002366; /* Añade un borde azul al pasar el ratón */
+}
+
+/* Estilo de la sección parallax */
+.parallax {
+    background-image: url('img/history.jpg'); /* Reemplaza con tu imagen */
+    min-height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: right;
+}
+
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    color: white;
+    text-align: right;
+}
+
+.parallax-content {
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff; /* Hacer el texto completamente blanco */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Añadir sombra para resaltar el texto */
+}
+
+.parallax h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.parallax h2 {
+    font-size: 30px;
+}
+
+/* Estilos para la sección de noticias */
+.noticias {
+    background: #e2e9f6;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 0; /* Asegurar que no haya margen superior */
+}
+
+/* Ajuste del espaciado */
+.hero-section {
+    margin-bottom: 0; /* Asegurar que no haya margen inferior */
+    padding-bottom: 0; /* Asegurar que no haya padding inferior */
+}
+
+.noticias h2 {
+    font-size: 36px;
+    color: #002366;
+    margin-bottom: 30px;
+}
+
+.noticias-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.noticia {
+    background: #f9ecda; /* Amarillo claro */
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.noticia .fecha {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.noticia h3 {
+    font-size: 24px;
+    color: #002366;
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.noticia .btn {
+    padding: 10px 20px;
+    background: #002366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Corregido */
+}
+
+.noticia .btn:hover {
+    background-color: #ffcc00; /* Corregido */
+}
+
+/* Estilos para la sección de indicadores */
+.indicadores {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.indicadores h2 {
+    font-size: 36px;
+    color: #383085;
+    margin-bottom: 10px;
+}
+
+.indicadores h3 {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.indicadores-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.indicador {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.indicador .numero {
+    font-size: 50px;
+    color: #2a9c3c;
+    font-weight: bold;
+}
+
+.indicador p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilos para la sección de video */
+.video-section {
+    display: flex;
+    padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.video-container {
+    position: relative;
+    width: 40%;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.video-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.video-overlay p {
+    font-size: 16px;
+}
+
+.content {
+    width: 50%;
+}
+
+.content h2 {
+    font-size: 36px;
+    color: #002366;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content p a:hover {
+    text-decoration: underline;
+}
+
+.clientes {
+    text-align: center;
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.clientes h2 {
+    font-size: 36px;
+    color: #002366;
+    margin-bottom: 30px;
+}
+
+.slider {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider-item {
+    padding: 0 15px;
+}
+
+.slider-item img {
+    width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+}
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin: 0;
+    
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.hero-content .btn {
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.hero-slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.highlights {
+    background-color: #e9ecef; /* Fondo más oscuro para resaltar */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Margen inferior para separación */
+    display: flex;
+    justify-content: space-between; /* Espaciado entre elementos */
+}
+
+.highlights .highlight-item {
+    flex: 1;
+    margin: 0 10px; /* Margen horizontal entre ítems */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para los ítems */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.highlights h2 {
+    color: #343a40; /* Color oscuro para el texto */
+    margin-bottom: 10px;
+}
+
+.highlights p {
+    color: #6c757d; /* Texto gris */
+    margin-bottom: 15px;
+}
+
+.highlights .btn {
+    display: inline-block;
+    background-color: #007bff; /* Color azul */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.highlights .btn:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+
+footer {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Slider Animation */
+@keyframes slideAnimation {
+    0%, 20%, 100% { opacity: 1; }
+    25%, 95% { opacity: 0; }
+}
+
+.hero-slider .slide:nth-child(1) {
+    animation: slideAnimation 15s infinite;
+}
+
+.hero-slider .slide:nth-child(2) {
+    animation: slideAnimation 15s infinite 5s;
+}
+
+.hero-slider .slide:nth-child(3) {
+    animation: slideAnimation 15s infinite 10s;
+}

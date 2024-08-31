@@ -1,0 +1,66 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tab-container {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.tabs {
+    display: flex;
+    background-color: #f1f1f1;
+    justify-content: space-around;
+}
+
+.tab-link {
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+
+.tab-link:hover {
+    background-color: #ddd;
+}
+
+.tab-link.active {
+    background-color: #002366;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.tab-content h2 {
+    color: #002366;
+}
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a148c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download-button:hover {
+    background-color: #380d71;
+}

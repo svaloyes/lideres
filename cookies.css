@@ -1,0 +1,58 @@
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between; /* Cambia a flexbox con espacio alrededor */
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column; /* Esto alinea el texto y los botones en columna */
+}
+
+.cookie-content {
+    margin-bottom: 10px; /* Añade margen inferior para separar el texto de los botones */
+    text-align: center; /* Centra el texto */
+}
+
+.cookie-banner a {
+    color: yellow; /* Cambia el color del enlace a amarillo */
+    text-decoration: underline; /* Mantiene el subrayado para mayor visibilidad */
+}
+
+.cookie-banner a:hover {
+    color: #2a9c3c; /* Un tono de amarillo diferente al pasar el mouse */
+}
+
+
+.cookie-buttons {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    gap: 10px;
+}
+
+.accept-cookies, .reject-cookies {
+    background-color: #2a9c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.reject-cookies {
+    background-color: #f44336; /* Botón de rechazar en rojo */
+}
+
+.accept-cookies:hover {
+    background-color: #54e069;
+}
+
+.reject-cookies:hover {
+    background-color: #931a18;
+}

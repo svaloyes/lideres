@@ -1,0 +1,301 @@
+.hero-image {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 80px; /* Adjust margin to prevent overlap with fixed header */
+    height: 600px; /* Adjust the height as needed */
+    background: url('img/nosotros_4.png') no-repeat center top; /* Change center center to center top */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+
+main {
+    padding: 100px 20px 20px 20px; /* Add top padding to account for fixed header */
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #4a148c;
+    border-bottom: 2px solid #4a148c;
+    padding-bottom: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a148c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #380d71;
+}
+
+footer {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+body::after {
+    content: "";
+    display: block;
+    height: 100px; /* Prevent footer overlap */
+}
+
+#nosotros {
+    margin: 20px 0; /* Reduce el margen superior e inferior */
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+#nosotros h2 {
+    font-size: 32px;
+    color: #002366;
+    margin-bottom: 10px; /* Reduce el margen inferior */
+    border-bottom: 2px solid #002366;
+    padding-bottom: 10px;
+}
+
+#nosotros p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px; /* Reduce el margen inferior */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#nosotros .section-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#nosotros .section-content > div {
+    flex: 1;
+    background: #e2e2e2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#nosotros .section-content h3 {
+    font-size: 24px;
+    color: #002366;
+    margin-bottom: 10px;
+}
+
+#nosotros .section-content p {
+    font-size: 18px;
+    color: #333;
+    text-align: justify;
+}
+footer {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para las viñetas numeradas */
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+ol li {
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.premios-section {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.premios-img {
+    flex: 1;
+}
+
+.premios-img img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.premios-content {
+    flex: 2;
+    margin-left: -140px; /* Reduce el margen para acercar el texto a la imagen */
+}
+
+.premios-content h2 {
+    color: #007D57;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.premios-content p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.premios-btn {
+    background-color: #D4FF00;
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.premios-btn:hover {
+    background-color: #b8e600;
+    color: #fff;
+}
+
+
+
+.valores-list li,
+.politica-calidad-list li {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    color: #333;
+    list-style-type: none;
+}
+
+.valores-list li::before,
+.politica-calidad-list li::before {
+    content: "•";
+    color: #800080; /* Color del punto */
+
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.section-valores-principios {
+    position: relative;
+    padding: 60px 0;
+    background: #2c2c2c; /* Fondo gris oscuro */
+    color: #fff;
+    overflow: hidden;
+}
+
+.section-valores-principios::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/fundamento_emp.png'); /* Ruta a la imagen que usarás para el parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.3; /* Ajusta la opacidad para que no opaque demasiado el contenido */
+    z-index: 1;
+}
+
+.valores-principios {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.valor-principio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #444; /* Color de fondo de cada valor */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.valor-principio img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.valor-principio .texto {
+    max-width: 600px;
+}
+
+.valor-principio h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.valor-principio p {
+    font-size: 16px;
+    color: #ddd; /* Color del texto */
+    margin: 0;
+}

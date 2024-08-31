@@ -1,0 +1,161 @@
+/* Unificado de estilo_nosotros.css y nostros_2.css */
+
+/* Estilos para el header y la imagen de fondo */
+.header-image {
+    position: relative;
+    background: url('img/somos1.jpg') no-repeat center center/cover;
+    height: 400px;
+    width: 100%;
+    padding-top: 90px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header-image h1 {
+    font-size: 3em;
+    margin: 0;
+    color: white;
+}
+
+/* Estilos generales para las secciones */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #002366;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #002366;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Estilos para listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li::before {
+    content: "•";
+    color: #4a148c;
+    font-weight: bold;
+    display: inline-block; 
+    width: 20px;
+}
+
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+ol li {
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos para la sección de valores */
+#valores {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+#valores h2 {
+    font-size: 32px;
+    color: #002366;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #002366;
+    padding-bottom: 10px;
+}
+
+#valores p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#valores ul li {
+    background: #e2e2e2;
+    margin: 5px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    text-align: justify;
+}
+
+/* Estilos para el footer */
+footer {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para el parallax */
+.parallax {
+    background: url('img/parallax_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.parallax-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+}

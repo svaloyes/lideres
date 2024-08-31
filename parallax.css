@@ -1,0 +1,50 @@
+/* Estilo de la sección parallax */
+.parallax {
+    background-image: url('img/nosotros_parallax.jpg'); /* Reemplaza con tu imagen */
+    min-height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: right;
+    color: #ffffff; /* Color blanco puro para mayor contraste */
+}
+
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    color: white;
+    text-align: right;
+}
+
+.parallax-content {
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff; /* Hacer el texto completamente blanco */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Añadir sombra para resaltar el texto */
+}
+
+.parallax h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.parallax h2 {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.parallax p {
+    font-size: 30px;
+    color: #ffffff; /* Color blanco puro */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Sombra más intensa */
+}

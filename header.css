@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #ffffff; /* Cambia a un azul que complemente el escudo */
+    padding: 10px 0;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    border-bottom: 2px solid #a5a4a4; /* Línea gris al final del header */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #002366; /* Azul oscuro para el texto */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px 15px; /* Asegura un poco de espacio dentro del borde */
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+nav ul li a:hover {
+    color: #099746; /* Cambia a un color complementario al azul */
+    /*border: 2px solid #002366; /* Añade un borde azul al pasar el ratón */
+}
